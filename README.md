@@ -1,6 +1,6 @@
 # Tableau des utilisateurs
 
-Ce projet affiche un tableau des utilisateurs en utilisant les données de l'API [Random User](https://randomuser.me/).
+Ce projet affiche un tableau des utilisateurs en utilisant les données de l'API [Random User](https://randomuser.me/) et les données météorologiques de l'API [OpenWeatherMap](https://openweathermap.org/).
 
 ## Installation
 
@@ -20,7 +20,8 @@ Ce projet affiche un tableau des utilisateurs en utilisant les données de l'API
 ## Structure du projet
 
 - `index.html` : Le fichier HTML principal qui contient la structure du tableau.
-- `script.js` : Le fichier JavaScript qui récupère les données de l'API et les affiche dans le tableau.
+- `assets/script.js` : Le fichier JavaScript qui récupère les données des API et les affiche dans le tableau.
+- `assets/style.css` : Le fichier CSS pour le style du tableau et de la page.
 
 ## Dépendances
 
@@ -29,6 +30,7 @@ Ce projet affiche un tableau des utilisateurs en utilisant les données de l'API
 ## Fonctionnalités
 
 - Récupère les données de l'API Random User.
+- Récupère les données météorologiques de l'API OpenWeatherMap.
 - Affiche les utilisateurs dans un tableau avec les colonnes suivantes :
   - Nom d'utilisateur
   - Genre
@@ -36,8 +38,10 @@ Ce projet affiche un tableau des utilisateurs en utilisant les données de l'API
   - Photo
   - Ville
   - Pays
+  - Météo (description et température)
 
-## Ressource Externe
+## Ressources Externes
 
 - [Random User API](https://randomuser.me/) pour fournir les données des utilisateurs.
+- [OpenWeatherMap API](https://openweathermap.org/) pour fournir les données météorologiques.
 - [Tailwind CSS](https://tailwindcss.com/) pour le style.
