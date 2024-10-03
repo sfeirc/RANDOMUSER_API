@@ -38,7 +38,7 @@ function displayDataInTable(data) {
             <td>${user.name.first} ${user.name.last}</td>
             <td><img src="${user.picture.thumbnail}"></td>
             <td>${user.location.city}</td>
-            <td><img src="https://flagcdn.com/40x30/${user.nat.toLowerCase()}.png" alt="${user.location.country} flag"></td>
+            <td><img src="https://flagcdn.com/w40/${user.nat.toLowerCase()}.png" alt="${user.location.country} flag"></td>
         `;
         tableBody.appendChild(row);
     });
