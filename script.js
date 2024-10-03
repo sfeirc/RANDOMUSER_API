@@ -29,14 +29,16 @@ function displayDataInTable(data) {
     const tableBody = document.querySelector('#userTable tbody');
     data.forEach(user => {
         const row = document.createElement('tr');
+        const genderImage = user.gender === 'male' 
+            ? '<img src="img/1f468.png" alt="Male" style="width: 30px; height: 30px;">' 
+            : '<img src="img/1f469.png" alt="Female" style="width: 30px; height: 30px;">' ;
         row.innerHTML = `
             <td>${user.login.username}</td>
-            <td>${user.gender}</td>
+            <td>${genderImage}</td>
             <td>${user.name.first} ${user.name.last}</td>
             <td><img src="${user.picture.thumbnail}"></td>
             <td>${user.location.city}</td>
             <td><img src="https://flagcdn.com/40x30/${user.nat.toLowerCase()}.png" alt="${user.location.country} flag"></td>
-            
         `;
         tableBody.appendChild(row);
     });
